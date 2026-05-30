@@ -1,0 +1,26 @@
+<!-- @dsCard group="Colors" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><link rel="stylesheet" href="_card.css"/>
+<style>
+  body.card { padding: 24px 28px; }
+  table { width: 100%; border-collapse: collapse; font-family: var(--font-body); font-size: 13px; }
+  th { text-align: left; padding-bottom: 10px; font-family: var(--font-sub); font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--fg-3); border-bottom: 1px solid var(--border-1); }
+  td { padding: 9px 0; border-bottom: 1px solid var(--border-2); color: var(--fg-2); }
+  td.token { font-family: var(--font-mono); color: var(--fg-1); font-size: 12.5px; }
+  .chip { display: inline-flex; align-items: center; gap: 10px; }
+  .dot { width: 16px; height: 16px; border-radius: 999px; box-shadow: 0 0 0 1px rgba(11,13,42,.06) inset; }
+</style></head>
+<body class="card">
+  <table>
+    <thead><tr><th>Token</th><th>Role</th><th style="text-align:right">Value</th></tr></thead>
+    <tbody>
+      <tr><td class="token"><span class="chip"><span class="dot" style="background:#3F43B0"></span>--fg-brand</span></td><td>Brand foreground / links</td><td style="text-align:right;font-family:var(--font-mono)">#3F43B0</td></tr>
+      <tr><td class="token"><span class="chip"><span class="dot" style="background:#0B0D2A"></span>--fg-1</span></td><td>Primary text</td><td style="text-align:right;font-family:var(--font-mono)">#0B0D2A</td></tr>
+      <tr><td class="token"><span class="chip"><span class="dot" style="background:#3E4257"></span>--fg-2</span></td><td>Secondary text</td><td style="text-align:right;font-family:var(--font-mono)">#3E4257</td></tr>
+      <tr><td class="token"><span class="chip"><span class="dot" style="background:#6B6F85"></span>--fg-3</span></td><td>Tertiary / captions</td><td style="text-align:right;font-family:var(--font-mono)">#6B6F85</td></tr>
+      <tr><td class="token"><span class="chip"><span class="dot" style="background:#D0E1F2"></span>--bg-brand-soft</span></td><td>Sky panel background</td><td style="text-align:right;font-family:var(--font-mono)">#D0E1F2</td></tr>
+      <tr><td class="token"><span class="chip"><span class="dot" style="background:#2FB57A"></span>--ok</span></td><td>Success / installed</td><td style="text-align:right;font-family:var(--font-mono)">#2FB57A</td></tr>
+      <tr><td class="token"><span class="chip"><span class="dot" style="background:#D9425A"></span>--danger</span></td><td>Error / offline</td><td style="text-align:right;font-family:var(--font-mono)">#D9425A</td></tr>
+    </tbody>
+  </table>
+</body></html>

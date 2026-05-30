@@ -1,0 +1,35 @@
+<!-- @dsCard group="Components" -->
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="stylesheet" href="_card.css"/>
+<style>
+  body.card { padding: 28px 32px; display: flex; flex-direction: column; gap: 18px; justify-content: center; }
+  .row { display:flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .label { font-family: var(--font-sub); font-size: 10px; letter-spacing:.14em; text-transform: uppercase; color: var(--fg-3); width: 96px; }
+  button { font-family: var(--font-sub); font-weight: 600; font-size: 14px; border-radius: 999px; padding: 12px 22px; border: none; cursor: pointer; transition: all 200ms cubic-bezier(.22,1,.36,1); display:inline-flex; align-items:center; gap:8px; }
+  .primary { background: var(--fs-blue); color: #fff; box-shadow: 0 8px 20px rgba(63,67,176,.28); }
+  .primary:hover { background: #3338A0; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(63,67,176,.36); }
+  .secondary { background: var(--fs-sky); color: var(--fs-blue); }
+  .secondary:hover { background: #B6CFE6; }
+  .ghost { background: transparent; color: var(--fs-blue); padding: 12px 18px; }
+  .ghost:hover { background: var(--fs-blue-50); }
+  .small { font-size: 12px; padding: 8px 14px; }
+  .large { font-size: 16px; padding: 16px 28px; }
+  .arrow { width: 16px; height: 16px; }
+</style></head>
+<body class="card">
+  <div class="row"><span class="label">Primary</span>
+    <button class="primary small">Comprar</button>
+    <button class="primary">Elige el cambio</button>
+    <button class="primary large">Agendar instalación
+      <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+  <div class="row"><span class="label">Secondary</span>
+    <button class="secondary small">Ver detalles</button>
+    <button class="secondary">Catálogo</button>
+  </div>
+  <div class="row"><span class="label">Ghost / link</span>
+    <button class="ghost">Saber más
+      <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+</body></html>

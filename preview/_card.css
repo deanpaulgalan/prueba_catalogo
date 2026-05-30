@@ -1,0 +1,20 @@
+/* Card boilerplate — keep cards visually consistent in the DS gallery */
+@import url('../colors_and_type.css');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--fs-white);
+  color: var(--fg-1);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+body.card {
+  padding: 24px;
+  min-height: 100vh;
+}
+
+.card-row { display: flex; gap: 16px; align-items: stretch; flex-wrap: wrap; }
+.card-col { display: flex; flex-direction: column; gap: 12px; }
+.muted { color: var(--fg-3); font-family: var(--font-sub); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; }

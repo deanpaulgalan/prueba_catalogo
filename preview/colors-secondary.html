@@ -1,0 +1,35 @@
+<!-- @dsCard group="Colors" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="_card.css"/>
+<style>
+  body.card { padding: 0; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); min-height: 220px; }
+  .swatch { padding: 22px; color: #fff; display: flex; flex-direction: column; justify-content: space-between; }
+  .name { font-family: var(--font-sub); font-weight: 600; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; opacity: .85; }
+  .hex { font-family: var(--font-display); font-weight: 800; font-size: 26px; letter-spacing: -.02em; }
+  .meta { font-family: var(--font-body); font-size: 11px; opacity: .75; margin-top: 2px; }
+  .bright { background: #568EEC; }
+  .cyan { background: #8ACAEA; color: #1E2270; }
+  .violet { background: #8D67D8; }
+</style>
+</head>
+<body class="card">
+  <div class="grid">
+    <div class="swatch bright">
+      <span class="name">Bright</span>
+      <div><div class="hex">#568EEC</div><div class="meta">Pantone 2727 U</div></div>
+    </div>
+    <div class="swatch cyan">
+      <span class="name">Cyan</span>
+      <div><div class="hex">#8ACAEA</div><div class="meta">Pantone 291 C</div></div>
+    </div>
+    <div class="swatch violet">
+      <span class="name">Violet</span>
+      <div><div class="hex">#8D67D8</div><div class="meta">Pantone 814 C</div></div>
+    </div>
+  </div>
+</body>
+</html>

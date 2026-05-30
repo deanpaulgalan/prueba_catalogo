@@ -1,0 +1,42 @@
+<!-- @dsCard group="Brand" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="_card.css"/>
+<style>
+  body.card { padding: 0; display: flex; flex-direction: column; }
+  .row { flex: 1; display: flex; align-items: center; padding: 28px 36px; gap: 24px; min-height: 110px; }
+  .row + .row { border-top: 1px solid var(--border-1); }
+  .on-blue { background: var(--fs-blue); border-top-color: rgba(255,255,255,.12) !important; }
+
+  /* Real brand artwork, recolorable via CSS mask */
+  .wordmark {
+    display: block;
+    height: 46px;
+    width: calc(46px * 6.222);
+    -webkit-mask: url('../assets/logo-wordmark.png') no-repeat left center / contain;
+            mask: url('../assets/logo-wordmark.png') no-repeat left center / contain;
+  }
+  .imago {
+    display: block;
+    height: 56px;
+    width: calc(56px * 5.218);
+    -webkit-mask: url('../assets/logo-imagotype.png') no-repeat left center / contain;
+            mask: url('../assets/logo-imagotype.png') no-repeat left center / contain;
+  }
+  .tag { margin-left: auto; font-family: var(--font-sub); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; opacity: .55; }
+  .tag.light { color: #fff; }
+</style>
+</head>
+<body class="card">
+  <div class="row">
+    <span class="wordmark" style="background: var(--fs-blue)" role="img" aria-label="Future Store"></span>
+    <span class="tag">Wordmark</span>
+  </div>
+  <div class="row on-blue">
+    <span class="imago" style="background: #fff" role="img" aria-label="Future Store imagotype"></span>
+    <span class="tag light">Imagotype lockup</span>
+  </div>
+</body>
+</html>

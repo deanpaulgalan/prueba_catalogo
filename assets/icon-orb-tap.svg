@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Touch orb — single">
+  <defs>
+    <radialGradient id="orb1" cx="38%" cy="34%" r="75%">
+      <stop offset="0%" stop-color="#E8DAFE"></stop>
+      <stop offset="35%" stop-color="#A78BF0"></stop>
+      <stop offset="70%" stop-color="#6A4FCC"></stop>
+      <stop offset="100%" stop-color="#3F43B0"></stop>
+    </radialGradient>
+    <radialGradient id="orb1h" cx="40%" cy="38%" r="20%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"></stop>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="url(#orb1)"></circle>
+  <circle cx="100" cy="100" r="96" fill="url(#orb1h)"></circle>
+</svg>

@@ -1,0 +1,29 @@
+<!-- @dsCard group="Brand" -->
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="stylesheet" href="_card.css"/>
+<style>
+  body.card { padding: 0; }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); height: 100%; min-height: 240px; background: linear-gradient(180deg, #F8F9FC 0%, #EEF0F6 100%); }
+  .cell { display:flex; flex-direction:column; align-items:center; justify-content:center; padding: 20px; gap: 12px; }
+  .cell svg { width: 96px; height: 96px; filter: drop-shadow(0 14px 28px rgba(63,67,176,.28)); }
+  .name { font-family: var(--font-sub); font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--fg-2); }
+</style></head>
+<body class="card">
+  <div class="row">
+    <div class="cell">
+      <svg viewBox="0 0 200 200"><defs><radialGradient id="a" cx="38%" cy="34%" r="75%"><stop offset="0" stop-color="#E8DAFE"/><stop offset=".4" stop-color="#A78BF0"/><stop offset="1" stop-color="#3F43B0"/></radialGradient></defs><circle cx="100" cy="100" r="96" fill="url(#a)"/></svg>
+      <span class="name">Tap</span>
+    </div>
+    <div class="cell">
+      <svg viewBox="0 0 200 200"><defs><radialGradient id="b" cx="42%" cy="36%" r="78%"><stop offset="0" stop-color="#D9C9FF"/><stop offset=".45" stop-color="#8D67D8"/><stop offset="1" stop-color="#3F43B0"/></radialGradient><radialGradient id="bc" cx="50%" cy="50%" r="35%"><stop offset="0" stop-color="#C8B0FF" stop-opacity=".95"/><stop offset="1" stop-color="#C8B0FF" stop-opacity="0"/></radialGradient></defs><circle cx="100" cy="100" r="96" fill="url(#b)"/><circle cx="100" cy="100" r="60" fill="url(#bc)"/></svg>
+      <span class="name">Hold</span>
+    </div>
+    <div class="cell">
+      <svg viewBox="0 0 200 200"><defs><radialGradient id="c" cx="45%" cy="35%" r="80%"><stop offset="0" stop-color="#E8F4FF"/><stop offset=".5" stop-color="#8ACAEA"/><stop offset="1" stop-color="#568EEC"/></radialGradient></defs><circle cx="100" cy="100" r="96" fill="url(#c)"/><g fill="none" stroke="#3F43B0" stroke-width="2" opacity=".55"><circle cx="100" cy="100" r="30"/><circle cx="100" cy="100" r="50"/><circle cx="100" cy="100" r="72"/></g></svg>
+      <span class="name">Swipe</span>
+    </div>
+    <div class="cell">
+      <svg viewBox="0 0 200 200"><defs><radialGradient id="d" cx="40%" cy="35%" r="85%"><stop offset="0" stop-color="#C8B0FF"/><stop offset=".45" stop-color="#6A4FCC"/><stop offset="1" stop-color="#1E2270"/></radialGradient></defs><circle cx="100" cy="100" r="96" fill="url(#d)"/><g fill="none" stroke="#8ACAEA" stroke-width="1" opacity=".7"><circle cx="100" cy="100" r="14"/><circle cx="100" cy="100" r="28"/><circle cx="100" cy="100" r="42"/><circle cx="100" cy="100" r="56"/><circle cx="100" cy="100" r="70"/><circle cx="100" cy="100" r="84"/></g></svg>
+      <span class="name">Multi</span>
+    </div>
+  </div>
+</body></html>

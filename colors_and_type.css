@@ -1,0 +1,243 @@
+/* ============================================================
+   Future Store — Colors & Type
+   ============================================================
+   All three brand typefaces are self-hosted from the brand's
+   uploaded font files in /fonts. No CDN dependency.
+     · Epilogue   — variable weight 100–900 (display)
+     · Montserrat — Medium 500 (sub / eyebrow / UI labels)
+     · Roboto     — Regular 400 (body)
+   If you need additional Montserrat/Roboto weights, upload those
+   files and add matching @font-face blocks below.
+   ============================================================ */
+
+/* Display — variable weight */
+@font-face {
+  font-family: 'Epilogue';
+  src: url('fonts/Epilogue-VariableFont_wght.ttf') format('truetype-variations'),
+       url('fonts/Epilogue-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Sub — Montserrat Medium */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Body — Roboto Regular */
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* -----------------------------------------------------------
+     COLORS — Brand
+     -------------------------------------------------------- */
+  --fs-blue:        #3F43B0;   /* Pantone Blue 072 U — primary */
+  --fs-sky:         #D0E1F2;   /* Pantone 657 U — primary light */
+
+  --fs-blue-bright: #568EEC;   /* Pantone 2727 U — secondary */
+  --fs-cyan:        #8ACAEA;   /* Pantone 291 C — secondary */
+  --fs-violet:      #8D67D8;   /* Pantone 814 C — secondary */
+
+  /* Tints / shades derived from the primary blue (oklch-balanced) */
+  --fs-blue-900:    #1E2270;
+  --fs-blue-800:    #2A2E8E;
+  --fs-blue-700:    #3338A0;
+  --fs-blue-600:    #3F43B0;   /* = brand blue */
+  --fs-blue-500:    #5256C4;
+  --fs-blue-400:    #7176D6;
+  --fs-blue-300:    #9DA1E5;
+  --fs-blue-200:    #C5C8F1;
+  --fs-blue-100:    #E5E7F9;
+  --fs-blue-50:     #F3F4FD;
+
+  --fs-sky-300:     #B6CFE6;
+  --fs-sky-200:     #D0E1F2;   /* = brand sky */
+  --fs-sky-100:     #E3EDF8;
+  --fs-sky-50:      #F2F7FC;
+
+  /* -----------------------------------------------------------
+     COLORS — Neutrals
+     -------------------------------------------------------- */
+  --fs-ink:         #0B0D2A;   /* near-black with blue undertone */
+  --fs-graphite:    #1F2235;
+  --fs-slate:       #3E4257;
+  --fs-steel:       #6B6F85;
+  --fs-mute:        #9498AC;
+  --fs-line:        #D9DCE6;
+  --fs-cloud:       #EEF0F6;
+  --fs-paper:       #F8F9FC;
+  --fs-white:       #FFFFFF;
+
+  /* -----------------------------------------------------------
+     COLORS — Semantic (foreground / background / border)
+     -------------------------------------------------------- */
+  --fg-1:           var(--fs-ink);        /* primary text */
+  --fg-2:           var(--fs-slate);      /* secondary text */
+  --fg-3:           var(--fs-steel);      /* tertiary / captions */
+  --fg-mute:        var(--fs-mute);
+  --fg-brand:       var(--fs-blue);
+  --fg-on-brand:    var(--fs-white);
+  --fg-on-sky:      var(--fs-blue);
+
+  --bg-1:           var(--fs-white);      /* page */
+  --bg-2:           var(--fs-paper);      /* subtle panel */
+  --bg-3:           var(--fs-cloud);      /* recessed */
+  --bg-brand:       var(--fs-blue);
+  --bg-brand-soft:  var(--fs-sky);
+  --bg-ink:         var(--fs-ink);
+
+  --border-1:       var(--fs-line);
+  --border-2:       #E3E5EF;
+  --border-strong:  var(--fs-slate);
+
+  /* Status (kept on-brand) */
+  --ok:             #2FB57A;
+  --warn:           #E0A82E;
+  --danger:         #D9425A;
+  --info:           var(--fs-blue-bright);
+
+  /* -----------------------------------------------------------
+     TYPE — Families
+     -------------------------------------------------------- */
+  --font-display:   'Epilogue', 'Helvetica Neue', Arial, sans-serif;     /* titles, hero */
+  --font-sub:       'Montserrat', 'Helvetica Neue', Arial, sans-serif;   /* subtitles, eyebrow, UI labels */
+  --font-body:      'Roboto', 'Helvetica Neue', Arial, sans-serif;       /* long-form body */
+  --font-mono:      'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* -----------------------------------------------------------
+     TYPE — Scale
+     -------------------------------------------------------- */
+  --t-display-1:    clamp(56px, 7.5vw, 112px);  /* hero "Elige el cambio." */
+  --t-display-2:    clamp(40px, 5vw, 72px);
+  --t-h1:           clamp(32px, 3.6vw, 56px);
+  --t-h2:           clamp(26px, 2.6vw, 40px);
+  --t-h3:           22px;
+  --t-h4:           18px;
+  --t-body:         16px;
+  --t-body-sm:      14px;
+  --t-caption:      12px;
+  --t-eyebrow:      12px;
+
+  /* line-heights */
+  --lh-tight:       1.02;
+  --lh-snug:        1.15;
+  --lh-normal:      1.45;
+  --lh-relaxed:     1.6;
+
+  /* tracking */
+  --tr-tight:       -0.02em;
+  --tr-normal:      0;
+  --tr-wide:        0.08em;
+  --tr-eyebrow:     0.14em;
+
+  /* -----------------------------------------------------------
+     SPACING — 4px grid
+     -------------------------------------------------------- */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  20px;
+  --s-6:  24px;
+  --s-8:  32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+  --s-20: 80px;
+  --s-24: 96px;
+  --s-32: 128px;
+
+  /* -----------------------------------------------------------
+     RADII — circle/pill DNA from the isotype
+     -------------------------------------------------------- */
+  --r-xs:    4px;
+  --r-sm:    8px;
+  --r-md:    12px;
+  --r-lg:    20px;
+  --r-xl:    28px;
+  --r-2xl:   40px;
+  --r-pill:  999px;     /* default for buttons & capsules */
+  --r-full:  9999px;
+
+  /* -----------------------------------------------------------
+     ELEVATION — soft, cool-blue, never warm
+     -------------------------------------------------------- */
+  --shadow-1: 0 1px 2px rgba(11,13,42,0.06), 0 1px 1px rgba(11,13,42,0.04);
+  --shadow-2: 0 4px 12px rgba(11,13,42,0.07), 0 1px 2px rgba(11,13,42,0.04);
+  --shadow-3: 0 12px 28px rgba(11,13,42,0.10), 0 2px 4px rgba(11,13,42,0.05);
+  --shadow-4: 0 28px 60px rgba(11,13,42,0.16), 0 4px 8px rgba(11,13,42,0.06);
+  --shadow-brand: 0 12px 32px rgba(63,67,176,0.28);
+
+  /* -----------------------------------------------------------
+     MOTION
+     -------------------------------------------------------- */
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1:      120ms;
+  --dur-2:      200ms;
+  --dur-3:      320ms;
+  --dur-4:      520ms;
+}
+
+/* ============================================================
+   Type — semantic classes you can apply directly
+   ============================================================ */
+
+.fs-display-1, .fs-display-2, .fs-h1, .fs-h2 {
+  font-family: var(--font-display);
+  font-weight: 800;             /* Epilogue Regular is documented, but UI uses 700/800 */
+  letter-spacing: var(--tr-tight);
+  line-height: var(--lh-tight);
+  color: var(--fg-1);
+  text-wrap: balance;
+}
+.fs-display-1 { font-size: var(--t-display-1); }
+.fs-display-2 { font-size: var(--t-display-2); }
+.fs-h1        { font-size: var(--t-h1); }
+.fs-h2        { font-size: var(--t-h2); line-height: var(--lh-snug); }
+
+.fs-h3, .fs-h4, .fs-eyebrow {
+  font-family: var(--font-sub);    /* Montserrat Medium per brandbook */
+  font-weight: 600;
+  color: var(--fg-1);
+}
+.fs-h3 { font-size: var(--t-h3); line-height: var(--lh-snug); }
+.fs-h4 { font-size: var(--t-h4); line-height: var(--lh-snug); }
+
+.fs-eyebrow {
+  font-size: var(--t-eyebrow);
+  letter-spacing: var(--tr-eyebrow);
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--fg-brand);
+}
+
+.fs-body, p {
+  font-family: var(--font-body);   /* Roboto Regular per brandbook */
+  font-weight: 400;
+  font-size: var(--t-body);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-2);
+  text-wrap: pretty;
+}
+.fs-body-sm { font-size: var(--t-body-sm); line-height: var(--lh-normal); }
+.fs-caption { font-family: var(--font-body); font-size: var(--t-caption); color: var(--fg-3); }
+
+.fs-label {
+  font-family: var(--font-sub);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--fg-2);
+}

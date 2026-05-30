@@ -1,0 +1,27 @@
+<!-- @dsCard group="Components" -->
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="stylesheet" href="_card.css"/>
+<style>
+  body.card { padding: 24px 28px; background: var(--fs-paper); display:flex; gap: 18px; }
+  .card-item { flex: 1; background: #fff; border-radius: 28px; padding: 20px; box-shadow: 0 4px 12px rgba(11,13,42,.07), 0 1px 2px rgba(11,13,42,.04); display:flex; flex-direction:column; gap: 10px; }
+  .pic { aspect-ratio: 4/3; border-radius: 18px; background: linear-gradient(135deg, #D0E1F2 0%, #8ACAEA 100%); position:relative; overflow:hidden; }
+  .pic.alt { background: linear-gradient(135deg, #3F43B0 0%, #8D67D8 100%); }
+  .pic .orb { position:absolute; inset:auto 22px 22px auto; width:54px; height:54px; }
+  .eyebrow { font-family: var(--font-sub); font-weight: 600; font-size: 10px; letter-spacing:.14em; text-transform: uppercase; color: var(--fs-blue); }
+  .title { font-family: var(--font-display); font-weight: 800; font-size: 20px; letter-spacing: -.02em; color: var(--fg-1); }
+  .price { font-family: var(--font-sub); font-weight: 600; font-size: 14px; color: var(--fg-2); margin-top:auto; display:flex; align-items:center; justify-content: space-between; }
+  .cta { font-size: 12px; padding: 8px 14px; border-radius: 999px; background: var(--fs-blue); color: #fff; border:none; font-family: var(--font-sub); font-weight: 600; }
+</style></head>
+<body class="card">
+  <div class="card-item">
+    <div class="pic"><svg class="orb" viewBox="0 0 200 200"><defs><radialGradient id="o1" cx="40%" cy="35%" r="78%"><stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="#8D67D8"/><stop offset="1" stop-color="#3F43B0"/></radialGradient></defs><circle cx="100" cy="100" r="96" fill="url(#o1)"/></svg></div>
+    <span class="eyebrow">Iluminación</span>
+    <div class="title">Hub Inteligente Aurora</div>
+    <div class="price"><span>S/ 549</span><button class="cta">Añadir</button></div>
+  </div>
+  <div class="card-item">
+    <div class="pic alt"><svg class="orb" viewBox="0 0 200 200"><defs><radialGradient id="o2" cx="40%" cy="35%" r="78%"><stop offset="0" stop-color="#E8F4FF"/><stop offset=".55" stop-color="#8ACAEA"/><stop offset="1" stop-color="#568EEC"/></radialGradient></defs><circle cx="100" cy="100" r="96" fill="url(#o2)"/></svg></div>
+    <span class="eyebrow">Seguridad</span>
+    <div class="title">Cerradura Inteligente Lumo</div>
+    <div class="price"><span>S/ 899</span><button class="cta">Añadir</button></div>
+  </div>
+</body></html>

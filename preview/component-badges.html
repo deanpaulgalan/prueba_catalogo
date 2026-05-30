@@ -1,0 +1,28 @@
+<!-- @dsCard group="Components" -->
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="stylesheet" href="_card.css"/>
+<style>
+  body.card { padding: 28px 32px; display: flex; flex-direction: column; gap: 16px; justify-content:center; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .label { font-family: var(--font-sub); font-size: 10px; letter-spacing:.14em; text-transform: uppercase; color: var(--fg-3); width: 86px; }
+  .chip { font-family: var(--font-sub); font-weight: 600; font-size: 12px; padding: 6px 12px; border-radius: 999px; display:inline-flex; align-items:center; gap: 6px; }
+  .chip.brand { background: var(--fs-blue); color:#fff; }
+  .chip.sky { background: var(--fs-sky); color: var(--fs-blue); }
+  .chip.line { background: #fff; color: var(--fg-2); border: 1px solid var(--border-1); }
+  .chip.ok { background: #E6F6EE; color: #1E8A55; }
+  .chip.warn { background: #FCF1DA; color: #8A6614; }
+  .chip.danger { background: #FCE6EA; color: #9F2A3E; }
+  .dot { width: 6px; height: 6px; border-radius: 999px; background: currentColor; }
+</style></head>
+<body class="card">
+  <div class="row"><span class="label">Brand</span>
+    <span class="chip brand">Nuevo</span>
+    <span class="chip brand"><span class="dot"></span>En vivo</span>
+    <span class="chip sky">Más vendido</span>
+    <span class="chip line">Stock 7</span>
+  </div>
+  <div class="row"><span class="label">Status</span>
+    <span class="chip ok"><span class="dot"></span>Instalado</span>
+    <span class="chip warn"><span class="dot"></span>En camino</span>
+    <span class="chip danger"><span class="dot"></span>Desconectado</span>
+  </div>
+</body></html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Touch ripple motif" preserveAspectRatio="xMidYMid slice">
+  <g fill="none" stroke="currentColor" stroke-width="1" opacity="0.5">
+    <circle cx="500" cy="500" r="60"></circle>
+    <circle cx="500" cy="500" r="120"></circle>
+    <circle cx="500" cy="500" r="200"></circle>
+    <circle cx="500" cy="500" r="295"></circle>
+    <circle cx="500" cy="500" r="405"></circle>
+    <circle cx="500" cy="500" r="525"></circle>
+    <circle cx="500" cy="500" r="650"></circle>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Touch orb — swipe">
+  <defs>
+    <radialGradient id="orb3" cx="45%" cy="35%" r="80%">
+      <stop offset="0%" stop-color="#E8F4FF"></stop>
+      <stop offset="50%" stop-color="#8ACAEA"></stop>
+      <stop offset="100%" stop-color="#568EEC"></stop>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="url(#orb3)"></circle>
+  <g fill="none" stroke="#3F43B0" stroke-width="2" opacity="0.55">
+    <circle cx="100" cy="100" r="30"></circle>
+    <circle cx="100" cy="100" r="50"></circle>
+    <circle cx="100" cy="100" r="72"></circle>
+  </g>
+</svg>
